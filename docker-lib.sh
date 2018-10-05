@@ -68,8 +68,6 @@ start_docker() {
   docker daemon --data-root /scratch/docker ${server_args} >/tmp/docker.log 2>&1 &
   echo $! > /tmp/docker.pid
 
-  trap stop_docker EXIT
-
   sleep 1
 
   until docker info >/dev/null 2>&1; do
@@ -85,5 +83,12 @@ stop_docker() {
   fi
 
   kill -TERM $pid
-  wait $pid
+
+  sleep 1
+
+  #while [ -e /proc/$pid ]
+  #do
+  #  echo "Process: $pid is still running"
+  #  sleep .6
+  #done
 }

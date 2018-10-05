@@ -1,6 +1,7 @@
 # dcind (Docker-Compose-in-Docker)
 
-[![](https://images.microbadger.com/badges/image/amidos/dcind.svg)](http://microbadger.com/images/amidos/dcind "Get your own image badge on microbadger.com")
+gcarter-comcast modified `docker-lib.sh` `stop_docker()` so that it does not use `wait` to wait for the Docker daemon
+to stop upon the assumption that the shell running `stop_docker()` is not the shell that ran `start_docker()`.
 
 Use this ```Dockerfile``` to build a base image for your integration tests in [Concourse CI](http://concourse.ci/). Alternatively, you can use a ready-to-use image from the Docker Hub: [amidos/dcind](https://hub.docker.com/r/amidos/dcind/). The image is Alpine based.
 

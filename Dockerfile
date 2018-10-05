@@ -1,4 +1,5 @@
 # Inspired by https://github.com/mumoshu/dcind
+# $ docker build -f Dockerfile -t registry.vipertv.net/viper-ee/dcind:gcarter-comcast .
 FROM alpine:3.7
 MAINTAINER Dmitry Matrosov <amidos@amidos.me>
 
