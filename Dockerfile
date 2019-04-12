@@ -1,7 +1,7 @@
 # Inspired by https://github.com/mumoshu/dcind
-# $ docker build -f Dockerfile -t registry.vipertv.net/viper-ee/dcind:gcarter-comcast .
+# $ docker build -f Dockerfile -t hub.comcast.net/viper-ee/dcind .
 FROM alpine:3.7
-MAINTAINER Dmitry Matrosov <amidos@amidos.me>
+MAINTAINER Greg Carter <greg_carter@comcast.com>
 
 ENV DOCKER_VERSION=17.05.0-ce \
     DOCKER_COMPOSE_VERSION=1.18.0 \

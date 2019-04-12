@@ -1,0 +1,6 @@
+# Ignore git generated temp files.
+*.orig
+
+# IDE stuff.
+.idea/*
+*.iml

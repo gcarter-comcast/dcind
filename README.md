@@ -1,5 +1,7 @@
 # dcind (Docker-Compose-in-Docker)
 
+Copied from [https://github.com/gcarter-comcast/dcind](https://github.com/gcarter-comcast/dcind).
+
 gcarter-comcast modified `docker-lib.sh` `stop_docker()` so that it does not use `wait` to wait for the Docker daemon
 to stop upon the assumption that the shell running `stop_docker()` is not the shell that ran `start_docker()`.
 
